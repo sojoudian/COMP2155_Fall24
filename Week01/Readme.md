@@ -26,6 +26,6 @@ Download Pycharm IDE from:
 https://www.jetbrains.com/pycharm/download/
 
 
-# Python
+## Python
 Download Python from:
 https://www.python.org/downloads/
