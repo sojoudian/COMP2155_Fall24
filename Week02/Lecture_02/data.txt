@@ -1,0 +1,2 @@
+Python Rocks!
+JVM is slow!
