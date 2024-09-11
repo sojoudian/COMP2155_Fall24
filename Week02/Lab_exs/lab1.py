@@ -6,6 +6,8 @@ def get_user_input():
     #print(firstname, lastname, student_id)
     return firstname, lastname, student_id
 
+
+
 # Function to summarize the student information
 def summarize_student(firstname, lastname, student_id):
     return f"Student Summary:\nFirst Name: {firstname}\nLast Name: {lastname}\nStudent Id: {student_id}"
@@ -38,5 +40,9 @@ def main():
     # Read the file and output the formatted name
     read_student_from_file()
 
+
+
 if __name__ == "__main__":
     main()
+
+
