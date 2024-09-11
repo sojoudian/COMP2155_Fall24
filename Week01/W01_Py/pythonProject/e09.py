@@ -21,5 +21,20 @@ ciscoDevices = {
         "password": "FWPassword"
     }
 }
-# print(ciscoDevices)
-print("Details about R1: ", ciscoDevices["router_1"])
+#print(ciscoDevices)
+#print("Details about R1: ", ciscoDevices["router_1"])
+
+
+# Accessing device information
+for device, info in ciscoDevices.items():
+    print(f"Device: {device}")
+    print(f"Hostname: {info['hostname']} ")
+    print(f"IP Address: {info['ip_address']} ")
+    print(f"Device Type: {info['device_type']} ")
+    print("------------------------------------------")
+
+
+
+
+
+
