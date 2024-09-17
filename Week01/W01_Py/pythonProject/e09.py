@@ -1,4 +1,4 @@
-ciscoDevices = {
+ciscoDevices = {            
     "router_1": {
         "hostname": "R1",
         "ip_address": "192.168.1.1",
