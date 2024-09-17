@@ -1,2 +1,5 @@
 import os
-os.rename("fendi_shopping_list.txt", "alfi_shopping_list.txt")
+os.rename("alfi_shopping_list.txt", "fendi_shopping_list.txt")
+
+cdir = os.getcwd()
+print(cdir)
