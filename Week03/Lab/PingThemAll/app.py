@@ -24,7 +24,7 @@ class CSVWriter:
             writer = csv.writer(file)
             writer.writerow("IP Address/Domain")
             for ip in self.data:
-                writer.writerow(ip)
+                writer.writerow([ip])
         print(f"IP address and domains saved to {file_name}")
 
 class IPAddressApp:
