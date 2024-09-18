@@ -1,8 +1,6 @@
 import csv
 import datetime
 
-from Week02.Lecture_02.e05 import filename
-
 
 class IPAddressCollector:
     def __init__(self):
@@ -27,9 +25,18 @@ class CSVWriter:
             writer.writerow("IP Address/Domain")
             for ip in self.data:
                 writer.writerow(ip)
-
+        print(f"IP address and domains saved to {file_name}")
 
 class IPAddressApp:
+    def __init__(self):
+        self.collector = IPAddressCollector()
+    def run(self):
+        self.collector.get_user_input()
+        if self.collector.ip_addresses:
+            csv_writer = CSVWriter(self.collector.ip_addresses)
+            csv_writer.save_to_csv()
+        else:
+            print("No data entered!")
 
 if __name__ == '__main__':
     app = IPAddressApp()
