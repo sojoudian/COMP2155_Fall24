@@ -183,4 +183,3 @@ source env/bin/activate
 deactivate
 ```
 
-This guide covers the essentials for connecting to Linux machines, Cisco devices, using SSH for public key and password authentication, and automation tools for SSH-based interactions.
