@@ -1,4 +1,5 @@
 import paramiko
+import time
 
 # Create an SSH client instance
 ssh_client = paramiko.SSHClient()
@@ -14,7 +15,7 @@ ssh_client.connect(hostname='your_remote_host', port=22, username='your_username
 
 # Execute the command
 stdin, stdout, stderr = ssh_client.exec_command("ls")
-
+time.sleep(3)
 # Fetch the standard output and error
 output = stdout.read().decode('utf-8')
 error = stderr.read().decode('utf-8')
