@@ -17,8 +17,8 @@ net_connect = ConnectHandler(**cisco_device)
 prompt_text = net_connect.find_prompt()
 print(f"Device prompt: {prompt_text}")
 
-# Step 5: Run the 'show ip int brief' command and capture the output
-# send_command("show ip int brief"): Sends the command to the device and captures the output.
+# Step 5: Run the 'show clock' command and capture the output
+# send_command("show clock"): Sends the command to the device and captures the output.
 output = net_connect.send_command("show clock")
 print("Output of 'show clock':\n", output)
 
