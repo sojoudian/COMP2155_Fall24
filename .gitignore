@@ -1,0 +1,44 @@
+# Python cache and build files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.whl
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Python virtual environments
+env/
+venv/
+ENV/
+VENV/
+.venv/
+.ENV/
+
+# macOS-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.DS_Store?
+
+# Byte-compiled, virtual environment, and specific OS cache files
+.Python
+coverage.*
+.tox/
+*.coverage
+*.mypy_cache/
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode project files
+.vscode/
+.idea/
+
+# Log files
+*.log
