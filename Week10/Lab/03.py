@@ -13,7 +13,8 @@ with ConnectHandler(**connection) as conn:
     conn.config_mode()
     commands = [
         "interface Ethernet0/2",
-        "ip address 192.168.1.1 255.255.255.0",
+        "description Link to C Building",
+        "ip address 192.168.1.200 255.255.255.0",
         "no shutdown"
     ]
     conn.send_config_set(commands)
