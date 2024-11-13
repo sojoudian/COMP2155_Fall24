@@ -22,11 +22,7 @@ try:
 
     # Send the NTP server configuration command
     ntp_command = "ntp server 129.6.15.28"
-    netmiko_conn.send_command(
-        ntp_command,
-        expect_string=r"#",  # Adjust this if your prompt is different
-        read_timeout=30      # Increase timeout as needed
-    )
+    netmiko_conn.send_command(ntp_command)
 
     # Exit configuration mode
     netmiko_conn.exit_config_mode()
