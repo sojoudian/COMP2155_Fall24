@@ -1,3 +1,4 @@
+######## this is not required for the EXAM, ASSIGNMENT, or LABs ####
 import napalm
 import difflib
 
