@@ -1,13 +1,20 @@
-## Thread Subclass Examplepython
+# Shared Resource Access Without Synchronization
 
 from threading import Thread
 
-class MyThread(Thread):
-    def run(self):
-        for i in range(5):
-            print(f"Count: {i}")
+counter = 0
 
-thread = MyThread()
-thread.start()
-thread.join()
+def increment():
+    global counter
+    for _ in range(1000):
+        counter += 1
+
+threads = [Thread(target=increment) for _ in range(5)]
+for t in threads:
+    t.start()
+
+for t in threads:
+    t.join()
+
+print(f"Counter Value: {counter}")
 
