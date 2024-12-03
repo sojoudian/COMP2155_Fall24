@@ -1,4 +1,3 @@
-
 # Railway Reservation System
 
 This project is a Python-based multi-threaded application that demonstrates a railway reservation system. It allows multiple users (threads) to request berths simultaneously while avoiding race conditions using thread synchronization.
@@ -45,11 +44,11 @@ A **race condition** occurs when multiple threads access shared data simultaneou
 
 ### Running the Program
 
-1. Clone the repository or copy the script to a local file, e.g., `railway_reservation.py`.
+1. Clone the repository or copy the script to a local file, e.g., `001.py`.
 2. Run the script using Python:
 
    ```bash
-   python railway_reservation.py
+   python 001.py
    ```
 
 ### Output
@@ -69,13 +68,4 @@ Reservation process completed.
 - **Threading**: The use of threads to handle multiple users simultaneously.
 - **Locks**: Synchronization mechanism to avoid race conditions.
 - **Concurrency**: Managing shared resources among multiple threads.
-
-## Extending the Program
-
-- Modify the number of available berths to simulate different scenarios.
-- Add more threads to test concurrent access and ensure thread safety.
-
-## License
-
-This project is licensed under the MIT License - feel free to use and modify it.
 
