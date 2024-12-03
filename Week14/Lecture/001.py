@@ -18,7 +18,7 @@ class Railway:
         # Check if the required berths are available
         if self.available >= wanted:
             # Get the name of the current thread
-            name = current_thread().getName()
+            name = current_thread().name
 
             # Allocate the berth
             print(f"{wanted} berths are allotted for {name}")
@@ -38,13 +38,9 @@ class Railway:
 # Create an instance of Railway with 1 available berth
 obj = Railway(1)
 
-# Create two threads requesting 1 berth each
-t1 = Thread(target=obj.reserve, args=(1,))
-t2 = Thread(target=obj.reserve, args=(1,))
-
-# Set names for the threads
-t1.setName("First Person")
-t2.setName("Second Person")
+# Create two threads requesting 1 berth each, passing names directly
+t1 = Thread(target=obj.reserve, args=(1,), name="First Person")
+t2 = Thread(target=obj.reserve, args=(1,), name="Second Person")
 
 # Start the threads
 t1.start()
